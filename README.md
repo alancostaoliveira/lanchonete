@@ -2,6 +2,8 @@
 
 Website responsivo de uma lanchonete desenvolvido com HTML5, CSS3 e JavaScript.
 
+As imagens do projeto ficam em `assets/img/` e o cardápio principal é controlado por `data/catalogo.json`, que pode ser editado pelo painel admin.
+
 ## Paginas
 
 - Home
@@ -22,6 +24,8 @@ Website responsivo de uma lanchonete desenvolvido com HTML5, CSS3 e JavaScript.
 - Cadastro de usuario e administrador com persistencia local.
 - Carrinho com total atualizado.
 - Painel administrativo para cadastrar, editar e remover produtos.
+- Catálogo editável em JSON com persistência local.
+- Modo escuro com contraste ajustado para leitura.
 
 ## Estrutura
 
@@ -34,6 +38,8 @@ Website responsivo de uma lanchonete desenvolvido com HTML5, CSS3 e JavaScript.
 - `admin.html`
 - `css/style.css`
 - `js/script.js`
+- `assets/img/`
+- `data/catalogo.json`
 - `docs/relatorio-tecnico.md`
 
 ## Documentacao
