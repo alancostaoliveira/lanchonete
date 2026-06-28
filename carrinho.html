@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Cardápio da Lanchonete Sabor na Mesa com burgers, porções e bebidas."
+      content="Veja os itens do carrinho e acompanhe o total da compra na Lanchonete Sabor na Mesa."
     />
     <meta
       name="keywords"
-      content="cardápio, hambúrgueres, porções, bebidas, lanches"
+      content="carrinho, total, pedido, lanchonete, compra"
     />
-    <title>Lanchonete Sabor na Mesa | Cardápio</title>
+    <title>Lanchonete Sabor na Mesa | Carrinho</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -42,53 +42,38 @@
         <nav class="primary-nav" id="primaryNav">
           <a href="index.html">Home</a>
           <a href="sobre.html">Sobre</a>
-          <a class="active" href="cardapio.html">Cardapio</a>
+          <a href="cardapio.html">Cardapio</a>
           <a href="contato.html">Contato</a>
           <a href="cadastro.html">Cadastro</a>
-          <a href="carrinho.html">Carrinho</a>
+          <a class="active" href="carrinho.html">Carrinho</a>
           <a href="admin.html">Admin</a>
         </nav>
       </div>
     </header>
 
     <main class="section page-section">
-      <section class="catalog-hero reveal">
-        <div>
-          <h1 class="section-title">Cardápio em destaque</h1>
+      <section class="cart-layout">
+        <div class="cart-intro reveal">
+          <span class="eyebrow">Carrinho</span>
+          <h1 class="section-title">Revise seus itens antes de finalizar.</h1>
           <p>
-            Adicione itens ao carrinho, acompanhe o total e use o painel do
-            administrador para cadastrar novos produtos, alterar preço e trocar
-            imagens.
+            Adicione produtos no cardápio, ajuste quantidades e veja o total
+            atualizado em tempo real.
           </p>
         </div>
-        <div class="catalog-hero__links">
-          <a class="btn btn-primary" href="carrinho.html">Ir para o carrinho</a>
-          <a class="btn btn-secondary" href="cadastro.html">Criar cadastro</a>
+
+        <div class="cart-summary reveal">
+          <p>
+            <strong>Itens no carrinho:</strong> <span data-cart-count>0</span>
+          </p>
+          <p><strong>Total:</strong> <span data-cart-total>R$ 0,00</span></p>
+          <a class="btn btn-primary" href="cardapio.html"
+            >Continuar comprando</a
+          >
         </div>
+
+        <div class="cart-list reveal" data-cart-list></div>
       </section>
-
-      <div class="catalog-toolbar">
-        <div
-          class="filter-bar reveal"
-          role="tablist"
-          aria-label="Filtros do cardápio"
-        >
-          <button class="filter-btn active" data-filter="all">Todos</button>
-          <button class="filter-btn" data-filter="burger">Burgers</button>
-          <button class="filter-btn" data-filter="acompanhamento">
-            Acompanhamentos
-          </button>
-          <button class="filter-btn" data-filter="bebida">Bebidas</button>
-          <button class="filter-btn" data-filter="sobremesa">Sobremesas</button>
-        </div>
-        <div
-          class="catalog-status reveal"
-          data-catalog-status
-          aria-live="polite"
-        ></div>
-      </div>
-
-      <div class="menu-grid" id="menuGrid" data-catalog-grid></div>
     </main>
 
     <footer class="site-footer">

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Batata rústica ilustrada">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff0c9"/>
+      <stop offset="100%" stop-color="#f3c04f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" rx="36" fill="url(#bg)"/>
+  <circle cx="624" cy="120" r="56" fill="rgba(255,255,255,0.24)"/>
+  <rect x="160" y="150" width="480" height="250" rx="30" fill="rgba(255,255,255,0.3)"/>
+  <path d="M280 340l44-196 52 18-34 196z" fill="#e39a2f"/>
+  <path d="M342 336l36-188 54 12-28 194z" fill="#d9841f"/>
+  <path d="M416 344l22-206 56 10-10 198z" fill="#e8ae34"/>
+  <path d="M492 332l-4-182 58 8 8 188z" fill="#c86f1d"/>
+  <path d="M196 364h408l-24 52H220z" fill="#7b3d1a"/>
+  <path d="M226 372h346l18 30H212z" fill="#9b5a22"/>
+  <ellipse cx="400" cy="418" rx="170" ry="40" fill="#f7db8d"/>
+</svg>

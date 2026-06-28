@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-label="Milk-shake ilustrado">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd6da"/>
+      <stop offset="100%" stop-color="#f39aa6"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff8f0" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f1c5ca" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="560" rx="36" fill="url(#bg)"/>
+  <circle cx="640" cy="120" r="62" fill="rgba(255,255,255,0.24)"/>
+  <rect x="122" y="124" width="556" height="300" rx="34" fill="rgba(255,255,255,0.2)"/>
+  <path d="M318 162h164l-18 196H336z" fill="url(#glass)" stroke="#fff" stroke-width="8"/>
+  <path d="M344 164h112c16 0 30 13 30 30v10H314v-10c0-17 14-30 30-30z" fill="#f9f1d9"/>
+  <path d="M326 196h148l-12 126H338z" fill="#d95d7c"/>
+  <path d="M348 188h104l-10 52H358z" fill="#f6b4be"/>
+  <rect x="386" y="80" width="18" height="112" rx="9" transform="rotate(18 395 136)" fill="#c96d37"/>
+  <path d="M332 120c10-22 38-24 50-4 8 13 4 28-6 37-15 13-46 11-54-13-3-10-1-17 10-20z" fill="#fff0c9"/>
+  <path d="M446 118c10-22 38-24 50-4 8 13 4 28-6 37-15 13-46 11-54-13-3-10-1-17 10-20z" fill="#fff0c9"/>
+  <ellipse cx="400" cy="406" rx="172" ry="42" fill="#fff7f7" fill-opacity="0.35"/>
+</svg>

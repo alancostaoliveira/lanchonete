@@ -1,0 +1,42 @@
+[
+  {
+    "id": "smash-burger",
+    "nome": "Smash Burger",
+    "descricao": "Pão brioche, blend da casa, cheddar e molho especial.",
+    "categoria": "burger",
+    "preco": 28,
+    "imagem": "assets/img/smash-burger.jpg"
+  },
+  {
+    "id": "chicken-melt",
+    "nome": "Chicken Melt",
+    "descricao": "Frango crocante, queijo derretido e salada fresca.",
+    "categoria": "burger",
+    "preco": 27,
+    "imagem": "assets/img/ChickenMelt.png"
+  },
+  {
+    "id": "rustic-fries",
+    "nome": "Batata Rústica",
+    "descricao": "Porção dourada com tempero da casa.",
+    "categoria": "acompanhamento",
+    "preco": 16,
+    "imagem": "assets/img/batata-rustica.jpg"
+  },
+  {
+    "id": "milkshake",
+    "nome": "Milk-shake",
+    "descricao": "Chocolate, morango ou creme.",
+    "categoria": "bebida",
+    "preco": 15,
+    "imagem": "assets/img/Milk-shake.jpg"
+  },
+  {
+    "id": "item-1782681711217",
+    "nome": "Batata",
+    "descricao": "Batata Frita crocante",
+    "categoria": "acompanhamento",
+    "preco": 19.99,
+    "imagem": "assets/img/batata-frita.jpg"
+  }
+]

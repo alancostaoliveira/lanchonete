@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Painel administrativo para cadastrar itens, alterar preços e trocar imagens dos produtos."
+    />
+    <meta
+      name="keywords"
+      content="admin, produtos, preço, imagem, cadastro de itens"
+    />
+    <title>Lanchonete Sabor na Mesa | Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">SM</span
+          ><span class="brand-text"
+            ><strong>Sabor na Mesa</strong
+            ><small>Lanchonete Artesanal</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          ☰
+        </button>
+        <nav class="primary-nav" id="primaryNav">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="cardapio.html">Cardapio</a>
+          <a href="contato.html">Contato</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="carrinho.html">Carrinho</a>
+          <a class="active" href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section page-section">
+      <section class="admin-layout">
+        <div class="admin-panel reveal">
+          <span class="eyebrow">Administração</span>
+          <h1 class="section-title">Gerencie o cardápio pelo navegador.</h1>
+          <p>
+            As alterações ficam salvas localmente: nome, preço, categoria,
+            descrição e imagem.
+          </p>
+          <div
+            class="admin-status"
+            data-admin-access-status
+            aria-live="polite"
+          ></div>
+        </div>
+
+        <form class="admin-form reveal" data-admin-form novalidate>
+          <input type="hidden" name="id" />
+          <div class="form-status" data-admin-status aria-live="polite"></div>
+
+          <div class="form-field">
+            <label for="produtoNome">Nome do produto</label>
+            <input
+              type="text"
+              id="produtoNome"
+              name="nome"
+              placeholder="Novo lanche"
+              required
+            />
+            <small class="field-error" data-error-for="produtoNome"></small>
+          </div>
+          <div class="form-field">
+            <label for="produtoDescricao">Descrição</label>
+            <textarea
+              id="produtoDescricao"
+              name="descricao"
+              rows="4"
+              placeholder="Descreva o item"
+              required
+            ></textarea>
+            <small
+              class="field-error"
+              data-error-for="produtoDescricao"
+            ></small>
+          </div>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="produtoCategoria">Categoria</label>
+              <select id="produtoCategoria" name="categoria" required>
+                <option value="burger">Burger</option>
+                <option value="acompanhamento">Acompanhamento</option>
+                <option value="bebida">Bebida</option>
+                <option value="sobremesa">Sobremesa</option>
+              </select>
+              <small
+                class="field-error"
+                data-error-for="produtoCategoria"
+              ></small>
+            </div>
+            <div class="form-field">
+              <label for="produtoPreco">Preço</label>
+              <input
+                type="number"
+                id="produtoPreco"
+                name="preco"
+                step="0.01"
+                min="0"
+                placeholder="29.90"
+                required
+              />
+              <small class="field-error" data-error-for="produtoPreco"></small>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="produtoImagem">Imagem</label>
+            <input
+              type="text"
+              id="produtoImagem"
+              name="imagem"
+              placeholder="assets/img/exemplo.svg"
+              required
+            />
+            <small class="field-error" data-error-for="produtoImagem"></small>
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">
+              Salvar produto
+            </button>
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-reset-admin-form
+            >
+              Limpar
+            </button>
+          </div>
+        </form>
+
+        <div class="admin-list reveal" data-admin-list></div>
+
+        <section class="admin-json-panel reveal">
+          <div class="admin-list__header">
+            <h2>JSON editável</h2>
+            <p>Edite, importe ou exporte o catálogo em formato JSON.</p>
+          </div>
+          <textarea
+            class="admin-json-editor"
+            data-catalog-json
+            rows="18"
+            spellcheck="false"
+            aria-label="JSON do catálogo"
+          ></textarea>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="button" data-json-save>
+              Salvar JSON
+            </button>
+            <button class="btn btn-secondary" type="button" data-json-refresh>
+              Recarregar JSON
+            </button>
+            <button class="btn btn-secondary" type="button" data-json-export>
+              Exportar JSON
+            </button>
+          </div>
+          <div class="admin-status" data-json-status aria-live="polite"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Sabor na Mesa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

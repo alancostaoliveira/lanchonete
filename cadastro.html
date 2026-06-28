@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cadastre-se como usuário ou administrador da Lanchonete Sabor na Mesa."
+    />
+    <meta
+      name="keywords"
+      content="cadastro, usuário, administrador, lanchonete, login"
+    />
+    <title>Lanchonete Sabor na Mesa | Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">SM</span
+          ><span class="brand-text"
+            ><strong>Sabor na Mesa</strong
+            ><small>Lanchonete Artesanal</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          ☰
+        </button>
+        <nav class="primary-nav" id="primaryNav">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="cardapio.html">Cardapio</a>
+          <a href="contato.html">Contato</a>
+          <a class="active" href="cadastro.html">Cadastro</a>
+          <a href="carrinho.html">Carrinho</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section page-section">
+      <section class="auth-layout">
+        <div class="auth-intro reveal">
+          <span class="eyebrow">Cadastro de perfil</span>
+          <h1 class="section-title">Escolha como você vai usar o site.</h1>
+          <p>
+            O cadastro é salvo neste navegador. Usuários comuns vão para o
+            cardápio e o administrador recebe acesso à área de manutenção dos
+            produtos.
+          </p>
+          <div class="auth-notes">
+            <article>
+              <strong>Usuário</strong>
+              <p>Adiciona itens ao carrinho e acompanha o total.</p>
+            </article>
+            <article>
+              <strong>Admin</strong>
+              <p>Cadastra produtos, altera preços e troca imagens.</p>
+            </article>
+          </div>
+        </div>
+
+        <form class="auth-form reveal" data-auth-form novalidate>
+          <div class="form-status" data-auth-status aria-live="polite"></div>
+          <div class="form-field">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Seu nome completo"
+              required
+            />
+            <small class="field-error" data-error-for="nome"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="voce@exemplo.com"
+              required
+            />
+            <small class="field-error" data-error-for="email"></small>
+          </div>
+          <div class="form-field">
+            <label for="perfil">Perfil de acesso</label>
+            <select id="perfil" name="perfil" required>
+              <option value="usuario">Usuário</option>
+              <option value="admin">Administrador</option>
+            </select>
+            <small class="field-error" data-error-for="perfil"></small>
+          </div>
+          <div class="form-field">
+            <label for="senha">Senha</label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              placeholder="Crie uma senha"
+              required
+            />
+            <small class="field-error" data-error-for="senha"></small>
+          </div>
+          <button class="btn btn-primary" type="submit">Salvar cadastro</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Sabor na Mesa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
