@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cardápio da Lanchonete Sabor na Mesa com burgers, porções e bebidas."
+    />
+    <meta
+      name="keywords"
+      content="cardápio, hambúrgueres, porções, bebidas, lanches"
+    />
+    <title>Lanchonete Sabor na Mesa | Cardápio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">SM</span
+          ><span class="brand-text"
+            ><strong>Sabor na Mesa</strong
+            ><small>Lanchonete Artesanal</small></span
+          ></a
+        >
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          ☰
+        </button>
+        <nav class="primary-nav" id="primaryNav">
+          <a href="index.html">Home</a>
+          <a href="sobre.html">Sobre</a>
+          <a class="active" href="cardapio.html">Cardapio</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="section page-section">
+      <h1 class="section-title reveal">Cardápio em destaque</h1>
+      <div
+        class="filter-bar reveal"
+        role="tablist"
+        aria-label="Filtros do cardápio"
+      >
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="burger">Burgers</button>
+        <button class="filter-btn" data-filter="acompanhamento">
+          Acompanhamentos
+        </button>
+        <button class="filter-btn" data-filter="bebida">Bebidas</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-item reveal" data-category="burger">
+          <h2>Smash Burger</h2>
+          <p>Pão brioche, blend da casa, cheddar e molho especial.</p>
+          <span>R$ 28,00</span>
+        </article>
+        <article class="menu-item reveal" data-category="burger">
+          <h2>Chicken Melt</h2>
+          <p>Frango crocante, queijo derretido e salada fresca.</p>
+          <span>R$ 27,00</span>
+        </article>
+        <article class="menu-item reveal" data-category="acompanhamento">
+          <h2>Batata Rústica</h2>
+          <p>Porção dourada com tempero da casa.</p>
+          <span>R$ 16,00</span>
+        </article>
+        <article class="menu-item reveal" data-category="bebida">
+          <h2>Milk-shake</h2>
+          <p>Chocolate, morango ou creme.</p>
+          <span>R$ 15,00</span>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Sabor na Mesa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

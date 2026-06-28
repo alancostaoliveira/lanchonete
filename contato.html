@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato com a Lanchonete Sabor na Mesa e envie sua mensagem.">
+  <meta name="keywords" content="contato, formulário, lanchonete, pedido, atendimento">
+  <title>Lanchonete Sabor na Mesa | Contato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html"><span class="brand-mark">SM</span><span class="brand-text"><strong>Sabor na Mesa</strong><small>Lanchonete Artesanal</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primaryNav">☰</button>
+      <nav class="primary-nav" id="primaryNav">
+        <a href="index.html">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="cardapio.html">Cardapio</a>
+        <a class="active" href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section page-section">
+    <h1 class="section-title reveal">Fale conosco</h1>
+    <div class="two-columns">
+      <section class="content-panel reveal">
+        <h2>Informações</h2>
+        <p>Telefone: (11) 99999-9999</p>
+        <p>E-mail: contato@sabornamesa.com</p>
+        <p>Endereço: Av. Principal, 1000 - Centro</p>
+      </section>
+      <section class="content-panel reveal">
+        <h2>Formulário de contato</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome completo">
+          <small class="error-message" data-error-for="name"></small>
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+          <small class="error-message" data-error-for="email"></small>
+
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem ou pedido"></textarea>
+          <small class="error-message" data-error-for="message"></small>
+
+          <button class="btn btn-primary" type="submit">Enviar mensagem</button>
+          <p class="form-success" id="formSuccess" aria-live="polite"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Sabor na Mesa. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
